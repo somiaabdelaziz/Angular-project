@@ -1,0 +1,11 @@
+ 
+.new_class{
+    background-color: aqua;
+    color:  brown;
+}
+.inp{
+    line-height: 1.5rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.25);
+    border: 1px;
+    border-radius: 15px;
+}

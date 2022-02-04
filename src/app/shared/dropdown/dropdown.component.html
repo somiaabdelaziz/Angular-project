@@ -1,0 +1,17 @@
+  <div class="dropdown " [ngClass]="{ 'dropdown--opened':dropdownopended}">
+    
+      <div class="dropdown__header" (click)="dropdownopended=!dropdownopended"><a href="#" class="link"><img
+            class="flag flag-us" src="" alt="">English </a><i
+          class="fas fa-angle-down"></i></div>
+    
+        <div class="dropdown__body">
+          <ul class="dropdown__items list">
+            <li class="dropdown__item list__item"><a href="#" class="link"><img class="flag flag-us" src=""
+                  alt="">English </a></li>
+            <li class="dropdown__item list__item"><a href="#" class="link"><img class="flag flag-es" src=""
+                  alt="">Español </a></li>
+            <li class="dropdown__item list__item"><a href="#" class="link"><img class="flag flag-fr" src=""
+                  alt="">Française </a></li>
+          </ul>
+        </div>
+  </div>

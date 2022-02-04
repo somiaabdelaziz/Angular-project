@@ -1,0 +1,31 @@
+    <div class="container">
+      
+ <app-product-filter (searchTextChanged2)="receiveData($event)" class="filters"></app-product-filter>
+      <!-- Items -->
+      <section class="item-listing">
+        <!-- tools (sorting , change view , exporting) -->
+        <div class="item-listing__tools">
+          <select class="form-control" name="" id="">
+            <option value="1">Featured</option>
+            <option value="2">Price low to high</option>
+            <option value="3">Price high to low</option>
+            <option value="4">Name</option>
+          </select>
+          <a class="action-btn" routerLink="/product/add" >
+            <i class="fas fa-plus"></i>
+          </a>
+        </div>
+        <!-- items -->
+        <div class="item-listing__items item-listing--3items">
+          <!-- medium item -->
+       <app-product-item *ngFor="let item of productArray | paginate: { itemsPerPage: 8, currentPage: p }" class="item-medium-1" [productItem]="item"
+></app-product-item>
+    
+ 
+        </div>
+        <!-- paging -->
+        <div class="paging">
+          <pagination-controls (pageChange)="p = $event"></pagination-controls>
+        </div>
+      </section>
+    </div>
